@@ -2,18 +2,18 @@
     <header class="w-screen flex justify-between border-b-2 border-gray-300 p-3 fixed top-0 bg-white">
     <div class="flex">
       <NuxtLink to="/" class="flex">
-        <img src="../assets/images/Acer-Logo.png" alt="acer-logo" class="mx-2 max-w-16" />
-      <span class="text-xl border-l-4 mx-2 px-2 text-gray-500"
-        >OFFICAIL <br />LICENSEE</span>
+              <img src="../assets/images/Acer-Logo.png" alt="acer-logo" class="mx-2 max-w-16" />
+               <span class="text-xl border-l-4 mx-2 px-2 text-gray-500">OFFICAIL <br />LICENSEE</span>
       </NuxtLink>
     </div>
     <div class="flex gap-8 items-center text-[#5e5e58] text-xl">
-      <NuxtLink to="/products" class="mx-6">PRODUCTS</NuxtLink>
-      <NuxtLink to="/about" class="mx-6">ABOUT</NuxtLink>
-      <NuxtLink to="/support" class="mx-6">SUPPORT</NuxtLink>
+          <NuxtLink to="/products" class="mx-6">PRODUCTS</NuxtLink>
+          <NuxtLink to="/about" class="mx-6">ABOUT</NuxtLink>
+          <NuxtLink to="/support" class="mx-6">SUPPORT</NuxtLink>
     </div>
     <div class="flex items-center relative group w-[30%]">
-      <input type="search" placeholder="search" class="rounded-md outline-none border w-0 opacity-0 px-1 py-1 absolute right-1 bg-gray-200  group-hover:w-72 group-hover:opacity-100 transition-all ease-linear duration-500">
+      <input type="search" placeholder="search" 
+      class="rounded-md outline-none border w-0 opacity-0 px-1 py-1 absolute right-1 bg-gray-200  group-hover:w-72 group-hover:opacity-100 transition-all ease-linear duration-500">
       <i class="material-icons text-gray-400 text-3xl cursor-pointer absolute right-3">search</i>
     </div>
     </header>
