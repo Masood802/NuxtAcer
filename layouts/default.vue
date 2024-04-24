@@ -7,7 +7,20 @@
       </NuxtLink>
     </div>
     <div class="flex gap-8 items-center ">
-          <NuxtLink to="/products" class="mx-6 text-[#5e5e58] text-xl hover:text-black">PRODUCTS</NuxtLink>
+      <ul>
+            <li>
+                <NuxtLink to="/products" class="mx-6 group text-[#5e5e58] text-xl hover:text-black">PRODUCTS</NuxtLink>
+            <ul class="hidden group-hover:block">
+            <li>PCIe M.2 SSD</li>
+            <li>SATA 2.5 SSD</li>
+            <li>SATA M.2 SSD</li>
+            <li>Memory</li>
+            <li>Memory Card</li>
+            <li>USB Flash Drive</li>  
+            </ul>
+              </li>
+      </ul>    
+      
           <NuxtLink to="/about" class="mx-6 text-[#5e5e58] text-xl hover:text-black">ABOUT</NuxtLink>
           <NuxtLink to="/support" class="mx-6 text-[#5e5e58] text-xl hover:text-black">SUPPORT</NuxtLink>
     </div>
@@ -20,7 +33,7 @@
    <slot />
    <footer>
     <div class="w-full h-[450px] bg-[#575757] flex justify-between">
-      <div class="flex gap-8 text-[#c5c5bc] mx-6 my-16 ">
+      <div class="flex gap-8 uppercase text-[#e8e8e3] mx-6 my-16 ">
       <div>
         <ul>
             <NuxtLink to="/products" class="mx-6 text-xl">PRODUCTS</NuxtLink>
@@ -58,9 +71,11 @@
       <div class=" text-[#e4e4de] my-16 mx-6">
           <h2 class="text-lg">Access our news, exclusive deals</h2>
           
-          <input type="email" name="email" placeholder="Your email address" class=" bg-[#9e9c9c85] h-11 px-2 border-none outline-none my-4 text-sm ">
-          <label for="email" class="bg-[#202020] py-[11px] px-2 text-md">SIGN ME UP</label>
-          
+          <input type="email" id="email" name="email" v-model="email" 
+          placeholder="Your email address" 
+          class=" bg-[#9e9c9c85] h-11 px-2 border-none outline-none my-4 text-sm focus-within:text-white ">
+          <button @click="showAlert" class="bg-[#202020] py-[11px] px-2 text-md">SIGN ME UP
+          </button>
           
       </div>
       
@@ -79,13 +94,29 @@
 </template>
 
 <script setup>
-
+let email=ref('')
+function showAlert() {
+  if (email.value === '') {
+    document.getElementById('email').style.color='red'
+    document.getElementById('email').value='Please Enter Valid email'
+  }
+  else {
+    document.getElementById('email').style.color = 'white'
+    alert('Thank You! Your form has been submitted')
+    email.value=''
+  }
+  
+}
 </script>
 
 <style scoped>
 li{
   margin:20px 24px;
-  color:#f7f1f159
+  color:#e8e2e259;
+  
+}
+li:hover{
+  color:#e8e8e3;
 }
 .router-link-exact-active{
   color:black;
