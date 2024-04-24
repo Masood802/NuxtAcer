@@ -6,10 +6,10 @@
                <span class="text-xl border-l-4 mx-2 px-2 text-gray-500">OFFICAIL <br />LICENSEE</span>
       </NuxtLink>
     </div>
-    <div class="flex gap-8 items-center text-[#5e5e58] text-xl">
-          <NuxtLink to="/products" class="mx-6">PRODUCTS</NuxtLink>
-          <NuxtLink to="/about" class="mx-6">ABOUT</NuxtLink>
-          <NuxtLink to="/support" class="mx-6">SUPPORT</NuxtLink>
+    <div class="flex gap-8 items-center ">
+          <NuxtLink to="/products" class="mx-6 text-[#5e5e58] text-xl hover:text-black">PRODUCTS</NuxtLink>
+          <NuxtLink to="/about" class="mx-6 text-[#5e5e58] text-xl hover:text-black">ABOUT</NuxtLink>
+          <NuxtLink to="/support" class="mx-6 text-[#5e5e58] text-xl hover:text-black">SUPPORT</NuxtLink>
     </div>
     <div class="flex items-center relative group w-[30%]">
       <input type="search" placeholder="search" 
