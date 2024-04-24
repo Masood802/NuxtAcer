@@ -6,7 +6,7 @@
       <div class="text-center">
         <img src="../assets/images/produc-1.jpg" alt="" 
         class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2">Acer UD200 DDR5 Desktop Memory</h2>
+        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">Acer UD200 DDR5 Desktop Memory</h2>
         <p class="mx-auto text-center w-60 text-gray-500">Unleash speeds up to 5600 MHz 
           Elevate stability with On-Die ECC Power management IC (PMIC)
         </p>    
@@ -14,7 +14,7 @@
       <div class="text-center">
         <img src="../assets/images/product-2.jpg" alt="" 
         class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2 ">Acer SD200 Laptop DRAM</h2>
+        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500 ">Acer SD200 Laptop DRAM</h2>
         <p class="mx-auto text-center w-64 text-gray-500">
           Faster Load Times and File Transfers
           Improved Stability with On-Die ECC
@@ -23,7 +23,7 @@
       <div class="text-center">
         <img src="../assets/images/product-3.png" alt="" 
         class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2">Acer FA200 PCle M.2 SSD</h2>
+        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">Acer FA200 PCle M.2 SSD</h2>
         <p class="mx-auto text-center w-48 text-gray-500">PCIe Gen 4 x4, NVMe 2.0
           Speeds up to 7200 MB/s
             PS5 compatible  
@@ -32,7 +32,7 @@
       <div class="text-center">
         <img src="../assets/images/product-4.jpg" alt="" 
         class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2">Acer UM310 USB Flash Drive</h2>
+        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">Acer UM310 USB Flash Drive</h2>
         <p class="mx-auto text-center w-44 text-gray-500">
                      Up to 120 MB/s read
                       Storage on the go<br>
@@ -42,7 +42,7 @@
       <div class="text-center">
         <img src="../assets/images/1n.jpg" alt=""
         class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2 ">Acer MSC300 MicroSD Card</h2>
+        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">Acer MSC300 MicroSD Card</h2>
         <p class="mx-auto text-center w-64 text-gray-500">
                 Supports V30 and 4K<br> 
                 UHS-I standard<br>
@@ -51,7 +51,7 @@
       </div>
       <div class="text-center">
         <img src="../assets/images/UM310.png" alt="" class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in ">
-        <h2 class="text-center font-bold text-2xl py-2">Acer UP300 USB Flash Drive</h2>
+        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">Acer UP300 USB Flash Drive</h2>
         <p class="mx-auto text-center w-52 text-gray-500">
                  Up to 120 MB/s read speed<br>
                    Premium controller and ICs<br>
