@@ -2,7 +2,8 @@
     <h2 class="text-3xl font-bold my-16 py-2 text-center">NEWS</h2>
     <div class="grid grid-cols-3 gap-2">
         <div class="flex flex-col  mx-6 shadow-lg  overflow-hidden">
-            <img src="../assets/images/1news.jpg" alt="" class="scale-100 hover:scale-105 transition-all duration-400 ease-in ">
+            <img src="../assets/images/1news.jpg" alt=""
+             class="scale-100 hover:scale-105 transition-all duration-400 ease-in ">
             <h2 class="text-xl text-left mx-6 my-4">Acer FA200 SSD: Elevate Your Digital Experience</h2>
             <p class="text-sm text-left mx-6 my-2">Acer FA200 SSD brings faster read and write speeds -<br> 
                 7200 MB/s and 6200 MB/s -
