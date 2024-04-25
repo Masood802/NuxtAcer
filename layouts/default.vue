@@ -121,4 +121,7 @@ li:hover{
 .router-link-exact-active{
   color:black;
 }
+#nav1 li:hover #nav1 li ul li{
+  display: block;
+}
 </style>
