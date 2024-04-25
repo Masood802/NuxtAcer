@@ -1,8 +1,8 @@
 <template>
-    <header class="w-screen flex justify-between border-b-2 border-gray-300 p-3 fixed top-0 bg-white z-50">
+    <header class="w-screen flex justify-between border-b-2 border-gray-300  fixed top-0 bg-white z-50 py-1">
     <div class="flex">
       <NuxtLink to="/" class="flex">
-              <img src="../assets/images/Acer-Logo.png" alt="acer-logo" class="mx-2 max-w-16" />
+              <img src="../assets/images/Acer-Logo.png" alt="acer-logo" class="mx-6 max-w-16" />
                <span class="text-xl border-l-4 mx-2 px-2 text-gray-500">OFFICAIL <br />LICENSEE</span>
       </NuxtLink>
     </div>
@@ -26,8 +26,8 @@
     </div>
     <div class="flex items-center relative group w-[30%]">
       <input type="search" placeholder="search" 
-      class="rounded-md outline-none border w-0 opacity-0 px-1 py-1 absolute right-1 bg-gray-200  group-hover:w-72 group-hover:opacity-100 transition-all ease-linear duration-500">
-      <i class="material-icons text-gray-400 text-3xl cursor-pointer absolute right-3">search</i>
+      class="rounded-md outline-none border w-0 opacity-0 px-1 py-1 absolute right-4 bg-gray-200  group-hover:w-72 group-hover:opacity-100 transition-all ease-linear duration-500">
+      <i class="material-icons text-gray-400 text-3xl cursor-pointer absolute right-6">search</i>
     </div>
     </header>
    <slot />
