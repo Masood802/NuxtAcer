@@ -7,20 +7,17 @@
       </NuxtLink>
     </div>
     <div class="flex gap-8 items-center ">
-      <ul>
-            <li>
-                <NuxtLink to="/products" class="mx-6 group text-[#5e5e58] text-xl hover:text-black">PRODUCTS</NuxtLink>
-            <ul class="hidden group-hover:block">
-            <li>PCIe M.2 SSD</li>
-            <li>SATA 2.5 SSD</li>
-            <li>SATA M.2 SSD</li>
-            <li>Memory</li>
-            <li>Memory Card</li>
-            <li>USB Flash Drive</li>  
-            </ul>
-              </li>
-      </ul>    
-      
+          <div class="group relative z-50">
+                <NuxtLink to="/products" class=" text-[#5e5e58] text-xl hover:text-black z-50">PRODUCTS</NuxtLink>
+                <div class=" absolute top-[45px] left-[-30px] hidden z-0 bg-white w-[800px] h-auto  group-hover:h-[250px]  group-hover:block transition-all duration-500 ease-in">
+                  <div class="text-green-700 block">PCIe M.2 SSD</div>
+                  <li>SATA 2.5 SSD</li>
+                  <li>SATA M.2 SSD</li>
+                  <li>Memory</li>
+                  <li>Memory Card</li>
+                  <li>USB Flash Drive</li>
+                </div>
+          </div>
           <NuxtLink to="/about" class="mx-6 text-[#5e5e58] text-xl hover:text-black">ABOUT</NuxtLink>
           <NuxtLink to="/support" class="mx-6 text-[#5e5e58] text-xl hover:text-black">SUPPORT</NuxtLink>
     </div>
@@ -121,7 +118,5 @@ li:hover{
 .router-link-exact-active{
   color:black;
 }
-#nav1 li:hover #nav1 li ul li{
-  display: block;
-}
+
 </style>
