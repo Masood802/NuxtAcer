@@ -8,10 +8,11 @@
   </div>
 <div class="flex items-center w-full h-40 bg-zinc-200">
   <label for="products" class="uppercase ml-4">Product Type:</label>
-  <select name="products" id="prd" class="mx-2 bg-white shadow-lg px-2 py-1 w-44 ">
-    <option value="ALL" class="py-1">ALL</option>
-    <option value="">SATA 2.5 SSD</option>
-    <option value="">SATA 2.5 SSD</option>
+  <select name="products" id="prd" class="mx-2 bg-white shadow-lg w-44 h-8 my-2 p-1 text-sm outline-none">
+    <option value="ALL" class="py-2">ALL</option>
+    <option value="PCIe M.2 SSD">PCIe M.2 SSD</option>
+    <option value="SATA 2.5 SSD">SATA 2.5 SSD</option>
+    <option value="SATA M.2 SSD">SATA 2 SSD</option>
     <option value="">Memory</option>
     <option value="">Memory Card</option>
     <option value="">USB Flash Drive</option>
