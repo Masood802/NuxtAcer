@@ -17,20 +17,20 @@
     <option value="">USB Flash Drive</option>
   </select>
 </div>
-<div class="grid grid-cols-3 grid-rows-7">
-  <div>
-    <img src="../../assets/images/prd-4.jpg" alt="">
-    <h2>Acer MA200 NVMe SSD</h2>
+<div class="grid grid-cols-3 grid-rows-4 mx-auto my-10">
+  <div v-for="product in store.products" :key="product.id">
+    <img :src=product.image alt=""
+    class="max-w-52 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
+    <h2 class="text-center font-semibold text-lg py-2 hover:text-lime-500">{{product.title}}</h2>
   </div>
-  <div>
-    <img src="../../assets/images/prd-4.jpg" alt="">
-    <h2>Acer MA200 NVMe SSD</h2>
-  </div>
+  
 </div>
 </template>
 
 <script setup>
+import { useProductStore } from '~/stores/productStore';
 
-</script>
+const store=useProductStore()
+</script> 
 
 <style scoped></style>

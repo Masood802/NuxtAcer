@@ -1,8 +1,8 @@
 <template>
-    <header class="w-screen flex justify-between border-b-2 border-gray-300  fixed top-0 bg-white z-50 py-1">
+    <header class="w-screen h-20 flex justify-between border-b border-gray-300  fixed top-0 bg-white z-50 py-1">
     <div class="flex">
       <NuxtLink to="/" class="flex items-center">
-              <img src="../assets/images/Acer-Logo.png" alt="acer-logo" class="mx-6 w-16 h-12" />
+              <img src="../assets/images/Acer-Logo.png" alt="acer-logo" class="mx-6 max-w-16 h-12" />
                <span class="text-md border-l-2 mx-2 px-2 text-gray-500">OFFICAIL <br />LICENSEE</span>
       </NuxtLink>
     </div>
