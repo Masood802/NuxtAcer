@@ -3,7 +3,7 @@
     <h2 class="text-3xl font-bold my-6 py-2">PRODUCTS</h2>
     </div>
     <div class="grid grid-cols-3 gap-2 mx-auto">
-      <div class="text-center" v-for="product in store.products.slice(0,9)" key="product.id">
+      <div class="text-center" v-for="product in store.products.slice(0,9)" :key="product.id">
         <img :src=product.image alt="" 
         class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
         <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">{{ product.title }}</h2>

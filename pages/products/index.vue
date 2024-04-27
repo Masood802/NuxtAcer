@@ -8,18 +8,18 @@
   </div>
 <div class="flex items-center w-full h-40 bg-zinc-200">
   <label for="products" class="uppercase ml-4">Product Type:</label>
-  <select name="products" id="prd" v-model="store.selectedType" onselect="showItems()" >
-    <option value="ALL" class="py-2">ALL</option>
+  <select name="products" id="prd" v-model="store.selectedType" @change="showItems()" >
+    <option value="ALL" class="py-2" selected>ALL</option>
     <option value="PCIe M.2 SSD">PCIe M.2 SSD</option>
     <option value="SATA 2.5 SSD">SATA 2.5 SSD</option>
-    <option value="SATA M.2 SSD">SATA 2 SSD</option>
+    <option value="SATA M.2 SSD">SATA M.2 SSD</option>
     <option value="Memory">Memory</option>
     <option value="Memory Card">Memory Card</option>
     <option value="USB Flash Drive">USB Flash Drive</option>
   </select>
 </div>
-<div class="grid grid-cols-3 grid-rows-4 mx-auto my-10">
-  <div v-for="product in store.products" :key="product.id">
+<div class="grid grid-cols-3 mx-auto my-10">
+  <div v-for="product in newitems" :key="product.id">
     <img :src=product.image alt=""
     class="max-w-52 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
     <h2 class="text-center font-semibold text-lg py-2 hover:text-lime-500">{{product.title}}</h2>
@@ -29,14 +29,29 @@
 </template>
 
 <script setup>
+onMounted(()=>{
+  newitems.value=store.products
+})
 import { useProductStore } from '~/stores/productStore';
-
+const newitems=ref([])
 const store = useProductStore()
 function showItems() {
-  if (store.selectedType === 'Memory') {
-    store.products.filter((item)=>item.type!=store.selectedType)
-  }
+    if(store.selectedType==='Memory')
+   newitems.value=store.products.filter((item)=>item.type===store.selectedType)
+    if(store.selectedType==='Memory Card')
+    newitems.value= store.products.filter((item)=>item.type===store.selectedType)
+    if(store.selectedType==='USB Flash Drive')
+    newitems.value= store.products.filter((item)=>item.type===store.selectedType)
+    if(store.selectedType==='SATA M.2 SSD')
+    newitems.value=store.products.filter((item)=>item.type===store.selectedType)
+    if(store.selectedType==='SATA 2.5 SSD')
+    newitems.value=store.products.filter((item)=>item.type===store.selectedType)
+    if(store.selectedType==='PCIe M.2 SSD')
+    newitems.value=store.products.filter((item)=>item.type===store.selectedType)
+    if(store.selectedType==='ALL')
+     newitems.value=store.products
 }
+
 </script> 
 
 <style scoped>
