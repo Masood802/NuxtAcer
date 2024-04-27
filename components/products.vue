@@ -3,62 +3,14 @@
     <h2 class="text-3xl font-bold my-6 py-2">PRODUCTS</h2>
     </div>
     <div class="grid grid-cols-3 gap-2 mx-auto">
-      <div class="text-center">
-        <img src="../assets/images/produc-1.jpg" alt="" 
+      <div class="text-center" v-for="product in store.products.slice(0,9)" key="product.id">
+        <img :src=product.image alt="" 
         class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">Acer UD200 DDR5 Desktop Memory</h2>
+        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">{{ product.title }}</h2>
         <p class="mx-auto text-center w-60 text-gray-500">Unleash speeds up to 5600 MHz 
           Elevate stability with On-Die ECC Power management IC (PMIC)
         </p>    
       </div>
-      <div class="text-center">
-        <img src="../assets/images/product-2.jpg" alt="" 
-        class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500 ">Acer SD200 Laptop DRAM</h2>
-        <p class="mx-auto text-center w-64 text-gray-500">
-          Faster Load Times and File Transfers
-          Improved Stability with On-Die ECC
-            Optimized Power Efficiency</p>
-      </div>
-      <div class="text-center">
-        <img src="../assets/images/product-3.png" alt="" 
-        class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">Acer FA200 PCle M.2 SSD</h2>
-        <p class="mx-auto text-center w-48 text-gray-500">PCIe Gen 4 x4, NVMe 2.0
-          Speeds up to 7200 MB/s
-            PS5 compatible  
-          </p>
-      </div>
-      <div class="text-center">
-        <img src="../assets/images/product-4.jpg" alt="" 
-        class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">Acer UM310 USB Flash Drive</h2>
-        <p class="mx-auto text-center w-44 text-gray-500">
-                     Up to 120 MB/s read
-                      Storage on the go<br>
-                    Rock-solid durability
-        </p>    
-      </div>
-      <div class="text-center">
-        <img src="../assets/images/1n.jpg" alt=""
-        class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">Acer MSC300 MicroSD Card</h2>
-        <p class="mx-auto text-center w-64 text-gray-500">
-                Supports V30 and 4K<br> 
-                UHS-I standard<br>
-                 Reads at speeds up to 160 MB/s
-        </p>
-      </div>
-      <div class="text-center">
-        <img src="../assets/images/UM310.png" alt="" class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in ">
-        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">Acer UP300 USB Flash Drive</h2>
-        <p class="mx-auto text-center w-52 text-gray-500">
-                 Up to 120 MB/s read speed<br>
-                   Premium controller and ICs<br>
-                   Choice of three color
-          </p>
-      </div>
-      
     </div>
   <button class="flex items-center justify-center mx-auto w-48 uppercase border-2 border-gray-500 px-2 py-2 my-16 rounded-md hover:bg-lime-500 hover:border-lime-500 hover:text-white transition-all duration-500 ease-linear">
   <NuxtLink to="/products"> Explore Products</NuxtLink>
@@ -66,7 +18,8 @@
 </template>
 
 <script setup>
-
+import { useProductStore } from '~/stores/productStore';
+const store = useProductStore();
 </script>
 
 <style scoped>
