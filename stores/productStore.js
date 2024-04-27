@@ -155,7 +155,7 @@ export const useProductStore = defineStore("product", {
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
       {
-        id: 16,
+        id: 20,
         type: "SATA 2.5 SSD",
         title: "Acer RE100 2.5 SATA III SSD",
         image: "http://localhost:3000/_nuxt/assets/images/SATA2.52.jpg",
@@ -164,6 +164,7 @@ export const useProductStore = defineStore("product", {
       },
     ],
     selectedType: "ALL",
+    selectedProduct: ''
   }),
   actions: {},
 });

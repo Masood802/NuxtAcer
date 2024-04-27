@@ -1,5 +1,5 @@
 <template>
-    <header class="w-screen h-20 flex justify-between border-b border-gray-300  fixed top-0 bg-white z-50 py-1">
+    <header class="w-screen h-20 flex justify-between border-b border-gray-300 fixed top-0 bg-white z-50 py-1 mb-20">
     <div class="flex">
       <NuxtLink to="/" class="flex items-center">
               <img src="../assets/images/Acer-Logo.png" alt="acer-logo" class="mx-6 max-w-16 h-12" />
