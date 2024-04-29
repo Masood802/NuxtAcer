@@ -55,7 +55,6 @@ function showItems() {
 function showDetails(id) {
   store.selectedProduct = id
   router.push('/productdetails')
-   console.log(store.selectedProduct)
 }
 </script> 
 

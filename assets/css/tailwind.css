@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .col1{
+        @apply text-center bg-lime-600 text-white py-3 px-2 mb-[1px] text-xl;
+    }
+    .col2{
+        @apply text-left py-3 px-2 col-span-2 border-b-zinc-300 border-t border-r text-zinc-700 text-xl;
+    }
+}
