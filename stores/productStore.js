@@ -166,5 +166,11 @@ export const useProductStore = defineStore("product", {
     selectedType: "ALL",
     selectedProduct: ''
   }),
-  actions: {},
+  actions: {
+    showDetails(id) {
+  const router = useRouter();
+  this.selectedProduct = id
+  router.push('/productdetails')
+}
+  },
 });

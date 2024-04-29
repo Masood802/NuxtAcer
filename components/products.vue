@@ -4,9 +4,9 @@
     </div>
     <div class="grid grid-cols-3 gap-2 mx-auto">
       <div class="text-center" v-for="product in store.products.slice(0,9)" :key="product.id">
-        <img :src=product.image alt="" 
-        class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in">
-        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500">{{ product.title }}</h2>
+        <img :src=product.image alt="" @click="store.showDetails(product.id)"
+        class="max-w-72 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in cursor-pointer">
+        <h2 class="text-center font-bold text-2xl py-2 hover:text-lime-500 ">{{ product.title }}</h2>
         <p class="mx-auto text-center w-60 text-gray-500">Unleash speeds up to 5600 MHz 
           Elevate stability with On-Die ECC Power management IC (PMIC)
         </p>    
