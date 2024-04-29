@@ -1,30 +1,57 @@
 <template>
-    <header class="w-screen h-20 flex justify-between border-b border-gray-300 fixed top-0 bg-white z-50 py-1 mb-20">
+    <header class="w-screen h-[72px] flex justify-between border-b pb-2 border-gray-300 fixed top-0 bg-white z-40 py-1 mb-20">
     <div class="flex">
       <NuxtLink to="/" class="flex items-center">
               <img src="../assets/images/Acer-Logo.png" alt="acer-logo" class="mx-6 max-w-16 h-12" />
-               <span class="text-md border-l-2 mx-2 px-2 text-gray-500">OFFICAIL <br />LICENSEE</span>
+               <span class=" border-l-2 mx-2 px-2 text-gray-500">OFFICAIL <br />LICENSEE</span>
       </NuxtLink>
     </div>
     <div class="flex gap-8 items-center ">
-          <div class="group relative z-50">
-                <NuxtLink to="/products" class=" text-[#5e5e58] text-xl hover:text-black z-50">PRODUCTS</NuxtLink>
-                <div class=" absolute top-[45px] left-[-30px] hidden z-0 bg-white w-[800px] h-auto  group-hover:h-[250px]  group-hover:block transition-all duration-500 ease-in">
-                  <div class="text-green-700 block">PCIe M.2 SSD</div>
-                  <li>SATA 2.5 SSD</li>
-                  <li>SATA M.2 SSD</li>
-                  <li>Memory</li>
-                  <li>Memory Card</li>
-                  <li>USB Flash Drive</li>
+          <div class="group relative inline-block">
+                <NuxtLink to="/products" class=" text-[#5e5e58]  hover:text-black z-50">PRODUCTS</NuxtLink>
+                <div class=" absolute hidden bg-white text-lg min-w-[800px] left-[-70%] group-hover:block transition-all duration-500 ease-in">
+                  <div class="link mt-4 border-t grid grid-cols-3 group">
+                    <div class="bg-zinc-400 w-[70%] px-4 h-10 ">
+                          PCIe M.2 SSD 
+                  </div>
+                    <div class="hidden group-hover:grid grid-cols-3 gap-4 col-span-2 mx-auto">
+                            <div v-for="prd in store.products.slice(0,3)" :key="prd.id">
+                                <img :src=prd.image alt="">
+                                <h2 class="text-sm">{{ prd.title }}</h2>
+                            </div>
+                    </div>
+                  </div>
+                  <div class="link">SATA 2.5 SSD</div>
+                  <div class="link">SATA M.2 SSD</div>
+                  <div class="link">Memory</div>
+                  <div class="link">Memory Card</div>
+                  <div class="link">USB Flash Drive</div>
                 </div>
           </div>
-          <NuxtLink to="/about" class="mx-6 text-[#5e5e58] text-xl hover:text-black">ABOUT</NuxtLink>
-          <NuxtLink to="/support" class="mx-6 text-[#5e5e58] text-xl hover:text-black">SUPPORT</NuxtLink>
+          <div class="dropdown">
+                <NuxtLink to="/about" class="mx-6 text-[#5e5e58]  hover:text-black">ABOUT</NuxtLink>
+                <div class="dropdown-list uppercase w-32 text-center z-50">
+                  <NuxtLink to="#" class=" dmenu border-t mt-[23px] pt-2">Acer Storage</NuxtLink>
+                  <NuxtLink to="#" class="dmenu">News</NuxtLink>
+                  <NuxtLink to="#" class="dmenu">reviews</NuxtLink>
+                  <NuxtLink to="#" class="dmenu">contact us</NuxtLink>
+                </div>
+          </div>
+          <div class="dropdown">
+          <NuxtLink to="/support" class="mx-6 text-[#5e5e58]  hover:text-black">SUPPORT</NuxtLink>
+          <div class="dropdown-list uppercase w-32 text-center z-50">
+                  <NuxtLink to="/about" class="dmenu border-t mt-[23px] pt-2">CUSTOMER SUPPORT</NuxtLink>
+                  <NuxtLink to="/about" class="dmenu">MANUALS & TOOLS</NuxtLink>
+                  <NuxtLink to="/about" class="dmenu">WARRANTY POLICY</NuxtLink>
+                  <NuxtLink to="/about" class="dmenu">Acronis Download</NuxtLink>
+                  <NuxtLink to="/about" class="dmenu">FAQs</NuxtLink>
+                </div>
+          </div>
     </div>
     <div class="flex items-center relative group w-[30%]">
       <input type="search" placeholder="search" 
       class="rounded-md outline-none border w-0 opacity-0 px-1 py-1 absolute right-4 bg-gray-200  group-hover:w-72 group-hover:opacity-100 transition-all ease-linear duration-500">
-      <i class="material-icons text-gray-400 text-3xl cursor-pointer absolute right-6">search</i>
+      <NuxtLink to="/search" class="text-gray-400 text-3xl cursor-pointer absolute right-6"><i class="material-icons ">search</i></NuxtLink>
     </div>
     </header>
    <slot />
@@ -91,6 +118,9 @@
 </template>
 
 <script setup>
+import { useProductStore } from '~/stores/productStore';
+const store = useProductStore();
+
 let email=ref('')
 function showAlert() {
   if (email.value === '') {
@@ -118,5 +148,22 @@ li:hover{
 .router-link-exact-active{
   color:black;
 }
-
+.dropdown{
+  display:inline-block;
+  position:relative;
+}
+.dropdown-list{
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  position:absolute;
+  background:white;
+  min-width:160px;
+}
+.dropdown-list a{
+  display: block;
+}
+.dropdown:hover .dropdown-list{
+  display:block;
+}
 </style>
