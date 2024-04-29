@@ -140,7 +140,7 @@
            <div class="col1">Operating Temprature</div>
            <div class="col2">0 C to 85 C</div>
            <div class="col1">Warranty</div>
-           <div class="col2">Limited Lifetime</div>
+           <div class="col2 border-b">Limited Lifetime</div>
         </div>
     </div>
     <div id="download" class="my-12">
