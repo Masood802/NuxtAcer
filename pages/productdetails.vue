@@ -61,17 +61,17 @@
             <img src="../assets/images/Acer_UD200b.jpg" alt="">
         </div>
         <div class="p-7">
-            <img src="../assets/images/Acer_UD200_A.jpg" alt="">
+            <img src="../assets/images/Acer_UD200_A+4.jpg" alt="">
         </div>
         <div class="p-7">
-            <h2 class="text-5xl font-semibold  my-4">EXPAND COMPUTING EXPERIENCE WITH UD200 DDR5</h2>
+            <h2 class="text-5xl font-semibold  my-4">DDR5 NEW ARCHITECTURE, IDEAL MATCH FOR NEXT-GEN PCs</h2>
             <p class="text-zinc-700 w-[80%] my-2 leading-8"> Step into the new era of DDR5 with Acer UD200 Memory Modules.
                  With an impressive 5600 MHz frequency, it integrates dual 
                  32-bit sub-channels to facilitate efficient data transfer. 
             </p>
         </div>
 <div class="p-7">
-            <h2 class="text-5xl font-semibold  my-4">EXPAND COMPUTING EXPERIENCE WITH UD200 DDR5</h2>
+            <h2 class="text-5xl font-semibold  my-4">IMPROVED DATA INTEGRITY WITH ON-DIE ECC</h2>
             <p class="text-zinc-700 w-[80%] my-2 leading-8"> Step into the new era of DDR5 with Acer UD200 Memory Modules.
                  With an impressive 5600 MHz frequency, it integrates dual 
                  32-bit sub-channels to facilitate efficient data transfer. 
@@ -81,13 +81,13 @@
                  and Acer UD200 DDR5 comes in capacities up to 32 GB.</p>
         </div>
         <div class="p-7">
-            <img src="../assets/images/Acer_UD200b.jpg" alt="">
+            <img src="../assets/images/Acer_UD200_A+5.jpg" alt="">
         </div>
         <div class="p-7">
-            <img src="../assets/images/Acer_UD200_A.jpg" alt="">
+            <img src="../assets/images/Acer_UD200_A+6.jpg" alt="">
         </div>
         <div class="p-7">
-            <h2 class="text-5xl font-semibold  my-4">EXPAND COMPUTING EXPERIENCE WITH UD200 DDR5</h2>
+            <h2 class="text-5xl font-semibold  my-4">MORE EFFICIENT POWER MANAGEMENT</h2>
             <p class="text-zinc-700 w-[80%] my-2 leading-8"> Step into the new era of DDR5 with Acer UD200 Memory Modules.
                  With an impressive 5600 MHz frequency, it integrates dual 
                  32-bit sub-channels to facilitate efficient data transfer. 

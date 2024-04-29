@@ -19,7 +19,7 @@
   </select>
 </div>
 <div class="grid grid-cols-3 mx-auto my-10">
-  <div v-for="product in newitems" :key="product.id">
+  <div v-for="product in newitems" :key="product.id" id="prod">
     <img :src=product.image alt="" @click="showDetails(product.id)"
     class="max-w-52 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in cursor-pointer">
     <h2 class="text-center font-semibold text-lg py-2 hover:text-lime-500 cursor-pointer">{{product.title}}</h2>
