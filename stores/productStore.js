@@ -164,7 +164,9 @@ export const useProductStore = defineStore("product", {
       },
     ],
     selectedType: "ALL",
-    selectedProduct: ''
+    selectedProduct: '',
+    searchInput: '',
+    filteredlist: [],
   }),
   actions: {
     showDetails(id) {

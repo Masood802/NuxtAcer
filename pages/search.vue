@@ -7,13 +7,17 @@
         <div class="load">C</div>
         <div class="load">H</div>
     </div>
-    <div>
-        
+    <div v-for="item in store.filteredlist" :key="item.id" class="flex flex-col gap-3">
+        <div>{{ item.title }}</div>
+    </div>
+    <div v-if="store.filteredlist.length===0">
+        <h2 class="text-3xl text-center">NO DATA FOUND</h2>
     </div>
 </template> 
 
 <script setup>
-
+import { useProductStore } from '~/stores/productStore';
+const store = useProductStore();
 </script>
 
 <style scoped>
