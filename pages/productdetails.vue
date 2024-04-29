@@ -153,8 +153,8 @@
         <h2 class="uppercase text-3xl font-semibold text-center py-4 mx-auto">related products</h2>
         <div class="grid grid-cols-3 gap-4 mx-auto w-[80%]">
             <div v-for="prod in relatedProducts" :key="prod.id" class="bg-white shadow-sm border">
-                <img :src=prod.image alt="" @click="changeproduct(prod.id)"
-                    class="max-w-52 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in cursor-pointer">
+                <a href="#product"><img :src=prod.image alt="" @click="changeproduct(prod.id)"
+                    class="max-w-52 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in cursor-pointer"></a>
                     <h2 class="text-center font-semibold text-lg py-2 hover:text-lime-500 cursor-pointer">{{prod.title}}</h2>
             </div>
         </div>
