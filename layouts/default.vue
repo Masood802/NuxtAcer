@@ -46,7 +46,7 @@
     <div class="flex items-center relative group w-[30%]">
       <input type="text" placeholder="search" v-model="store.searchInput" @input="changeopacity"
       class="rounded-md outline-none border w-0 opacity-0 px-1 py-1 absolute right-4 bg-gray-200  group-hover:w-72 group-hover:opacity-100 transition-all ease-linear duration-500">
-     <i class="material-icons text-gray-400 text-3xl cursor-pointer absolute right-6" @click="searchItem(store.searchInput)">search</i>
+     <i class="material-icons text-gray-400 text-3xl cursor-pointer absolute right-6" @click="store.searchItem(store.searchInput)">search</i>
     </div>
     </header>
    <slot />
@@ -127,19 +127,6 @@ function showAlert() {
     alert('Thank You! Your form has been submitted')
     email.value = ''
   } 
-}
-function searchItem(word) {
-  console.log(word)
-  if(!word)
-  {
-     router.push('/search')
-  }
-  store.filteredlist = store.products.filter((item) => item.title.toLowerCase().includes(word.toLowerCase()))
-  store.searchInput = '';
-    router.push('/search')
-}
-function changeopacity() {
-  document.getElementById('err').style.opacity = 0;
 }
 </script>
 

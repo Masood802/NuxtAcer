@@ -10,7 +10,7 @@
     <div class="flex items-center relative group w-[30%] mt-32 justify-center mx-auto mb-4">
       <input type="text" placeholder="search" v-model="store.searchInput"
       class="shadow-md border border-zinc-100 px-8 py-3 outline-none rounded-l-md">
-     <i class="material-icons text-gray-200 bg-lime-600 text-4xl cursor-pointer absolute right-6 px-3 py-1 rounded-r-md" @click="searchItem(store.searchInput)">search</i>
+     <i class="material-icons text-gray-200 bg-lime-600 text-4xl cursor-pointer absolute right-6 px-3 py-1 rounded-r-md" @click="store.searchItem(store.searchInput)">search</i>
     </div>
     <div v-for="item in store.filteredlist" :key="item.id" 
     class="flex flex-col text-lg text-left font-bold py-2 px-4 my-2 text-lime-600 border-t w-[80%] mx-auto">

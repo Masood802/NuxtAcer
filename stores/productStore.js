@@ -170,9 +170,19 @@ export const useProductStore = defineStore("product", {
   }),
   actions: {
     showDetails(id) {
-  const router = useRouter();
-  this.selectedProduct = id
-  router.push('/productdetails')
-}
+          const router = useRouter();
+          this.selectedProduct = id
+          router.push('/productdetails')
+                    },
+    searchItem(word) {
+          const router=useRouter()
+            if(!word)
+                   {
+                  router.push('/search')
+                   }
+        this.filteredlist = this.products.filter((item) => item.title.toLowerCase().includes(word.toLowerCase()))
+        this.searchInput = '';
+        router.push('/search')
+                      }
   },
 });
