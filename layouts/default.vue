@@ -102,7 +102,7 @@
     <div class="w-full h-[200px] bg-[#202020]">
       <div class="flex gap-8 mx-6 py-8 border-b border-zinc-500 text-zinc-500"> 
         <NuxtLink to="/privacy">Privacy Policy</NuxtLink>
-        <NuxtLink to="/about">Contact Us</NuxtLink>
+        <NuxtLink to="/support">Contact Us</NuxtLink>
       </div>
       <div class="py-6 mx-6 text-zinc-500 text-sm">
         <p>Copyright © 2023 BIWIN Storage. All Rights Reserved.<br>
