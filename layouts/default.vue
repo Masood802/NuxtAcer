@@ -3,7 +3,7 @@
     <div class="flex">
       <NuxtLink to="/" class="flex items-center">
               <img src="../assets/images/Acer-Logo.png" alt="acer-logo" class="mx-6 max-w-16 h-12" />
-               <span class=" border-l-2 mx-2 px-2 text-gray-500">OFFICAIL <br />LICENSEE</span>
+               <span class=" border-l-2 mx-2 px-2 text-gray-500 text-sm leading-4 font-semibold">OFFICAIL <br />LICENSEE</span>
       </NuxtLink>
     </div>
     <div class="flex gap-8 items-center ">
@@ -35,10 +35,10 @@
           <div class="dropdown">
                 <NuxtLink to="/about" class="mx-6 text-[#5e5e58]  hover:text-black">ABOUT</NuxtLink>
                 <div class="dropdown-list uppercase w-32 text-center z-50">
-                  <NuxtLink to="#" class=" dmenu border-t mt-[23px] pt-2">Acer Storage</NuxtLink>
-                  <NuxtLink to="#" class="dmenu">News</NuxtLink>
+                  <NuxtLink to="/about" class=" dmenu border-t mt-[23px] pt-2">Acer Storage</NuxtLink>
+                  <NuxtLink to="/news" class="dmenu">News</NuxtLink>
                   <NuxtLink to="#" class="dmenu">reviews</NuxtLink>
-                  <NuxtLink to="#" class="dmenu">contact us</NuxtLink>
+                  <NuxtLink to="/support" class="dmenu">contact us</NuxtLink>
                 </div>
           </div>
           

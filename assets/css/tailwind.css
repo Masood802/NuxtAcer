@@ -18,4 +18,7 @@
     .main{
      @apply absolute hidden bg-white text-lg min-w-[900px] left-[-130%] h-auto group-hover:block transition-all duration-500 ease-in shadow-md
     }
+    .imagediv{
+     @apply flex flex-col mx-6 shadow-lg overflow-hidden my-4
+    }
 }
