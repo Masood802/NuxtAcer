@@ -28,7 +28,7 @@
         </div>
     </div>
     <button class="flex items-center justify-center mx-auto w-48 border-2 border-gray-500 px-2 py-2 my-20 rounded-md hover:bg-lime-500 hover:border-lime-500 hover:text-white transition-all duration-500 ease-linear">
-  <NuxtLink to="/products"> NEWS ROOM</NuxtLink>
+  <NuxtLink to="/news"> NEWS ROOM</NuxtLink>
   </button>
 </template>
 
