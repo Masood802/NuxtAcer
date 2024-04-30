@@ -9,23 +9,27 @@
     <div class="flex gap-8 items-center ">
           <div class="group relative inline-block">
                 <NuxtLink to="/products" class=" text-[#5e5e58]  hover:text-black z-50">PRODUCTS</NuxtLink>
-                <div class=" absolute hidden bg-white text-lg min-w-[800px] left-[-70%] group-hover:block transition-all duration-500 ease-in">
-                  <div class="link mt-4 border-t grid grid-cols-3 group">
-                    <div class="bg-zinc-400 w-[70%] px-4 h-10 ">
-                          PCIe M.2 SSD 
+                <div class="main">
+                  <div class=" mt-6 border-t grid grid-cols-3 group">
+                    <div class="link bg-white group">PCIe M.2 SSD </div>
+                    <div class=" col-span-2"></div>
+                    <div class="link ">SATA 2.5 SSD</div><div class=" col-span-2"></div>
+                    <div class="link">SATA M.2 SSD</div><div class=" col-span-2"></div>
+                    <div class="link">Memory</div><div class=" col-span-2"></div>
+                    <div class="link">Memory Card</div><div class=" col-span-2"></div>
+                    <div class="link">USB Flash Drive</div><div class=" col-span-2"></div>
                   </div>
-                    <div class="hidden group-hover:grid grid-cols-3 gap-4 col-span-2 mx-auto">
-                            <div v-for="prd in store.products.slice(0,3)" :key="prd.id">
-                                <img :src=prd.image alt="">
-                                <h2 class="text-sm">{{ prd.title }}</h2>
-                            </div>
-                    </div>
-                  </div>
-                  <div class="link">SATA 2.5 SSD</div>
-                  <div class="link">SATA M.2 SSD</div>
-                  <div class="link">Memory</div>
-                  <div class="link">Memory Card</div>
-                  <div class="link">USB Flash Drive</div>
+                  
+                </div>
+          </div>
+          <div class="dropdown">
+          <NuxtLink to="/support" class="mx-6 text-[#5e5e58]  hover:text-black">SUPPORT</NuxtLink>
+          <div class="dropdown-list uppercase w-32 text-center z-50">
+                  <NuxtLink to="/support" class="dmenu border-t mt-[23px] pt-2">CUSTOMER SUPPORT</NuxtLink>
+                  <NuxtLink to="/about" class="dmenu">MANUALS & TOOLS</NuxtLink>
+                  <NuxtLink to="/about" class="dmenu">WARRANTY POLICY</NuxtLink>
+                  <NuxtLink to="/about" class="dmenu">Acronis Download</NuxtLink>
+                  <NuxtLink to="/about" class="dmenu">FAQs</NuxtLink>
                 </div>
           </div>
           <div class="dropdown">
@@ -37,19 +41,10 @@
                   <NuxtLink to="#" class="dmenu">contact us</NuxtLink>
                 </div>
           </div>
-          <div class="dropdown">
-          <NuxtLink to="/support" class="mx-6 text-[#5e5e58]  hover:text-black">SUPPORT</NuxtLink>
-          <div class="dropdown-list uppercase w-32 text-center z-50">
-                  <NuxtLink to="/about" class="dmenu border-t mt-[23px] pt-2">CUSTOMER SUPPORT</NuxtLink>
-                  <NuxtLink to="/about" class="dmenu">MANUALS & TOOLS</NuxtLink>
-                  <NuxtLink to="/about" class="dmenu">WARRANTY POLICY</NuxtLink>
-                  <NuxtLink to="/about" class="dmenu">Acronis Download</NuxtLink>
-                  <NuxtLink to="/about" class="dmenu">FAQs</NuxtLink>
-                </div>
-          </div>
+          
     </div>
     <div class="flex items-center relative group w-[30%]">
-      <input type="text" placeholder="search" v-model="store.searchInput" 
+      <input type="text" placeholder="search" v-model="store.searchInput" @input="changeopacity"
       class="rounded-md outline-none border w-0 opacity-0 px-1 py-1 absolute right-4 bg-gray-200  group-hover:w-72 group-hover:opacity-100 transition-all ease-linear duration-500">
      <i class="material-icons text-gray-400 text-3xl cursor-pointer absolute right-6" @click="searchItem(store.searchInput)">search</i>
     </div>
@@ -135,9 +130,16 @@ function showAlert() {
 }
 function searchItem(word) {
   console.log(word)
-  store.filteredlist= store.products.filter((item) => item.title.toLowerCase().includes(word.toLowerCase()))
+  if(!word)
+  {
+     router.push('/search')
+  }
+  store.filteredlist = store.products.filter((item) => item.title.toLowerCase().includes(word.toLowerCase()))
   store.searchInput = '';
-  router.push('/search')
+    router.push('/search')
+}
+function changeopacity() {
+  document.getElementById('err').style.opacity = 0;
 }
 </script>
 

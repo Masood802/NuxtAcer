@@ -169,12 +169,13 @@ const product=ref({})
 onMounted(() => {
     product.value = store.products.find((item) => item.id === store.selectedProduct)
     console.log(product.value)
-    relatedProducts.value=store.products.filter((item) => item.type === product.value.type)
+    relatedProducts.value=store.products.filter((item) => item.type === product.value.type&&item.id!=product.value.id)
     console.log(relatedProducts.value)
 })
 function changeproduct(id) {
     store.selectedProduct = id;
     product.value = store.products.find((item) => item.id === store.selectedProduct);
+    relatedProducts.value=store.products.filter((item) => item.type === product.value.type&&item.id!=product.value.id)
 }
 </script>
 

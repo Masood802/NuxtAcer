@@ -10,9 +10,12 @@
          @apply text-left py-3 px-2 col-span-2 border-b-zinc-300 border-t border-r text-zinc-700 text-xl;
     }
     .link{
-         @apply text-[#5e5e58] py-1 hover:text-black w-full block 
+         @apply text-[#5e5e58] py-1 hover:bg-white block bg-zinc-100 w-[70%] px-2 h-10
     }
     .dmenu{
         @apply text-[#5e5e58] text-sm hover:text-black w-full pb-4
+    }
+    .main{
+     @apply absolute hidden bg-white text-lg min-w-[900px] left-[-130%] h-auto group-hover:block transition-all duration-500 ease-in shadow-md
     }
 }
