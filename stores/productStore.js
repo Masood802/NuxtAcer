@@ -183,6 +183,10 @@ export const useProductStore = defineStore("product", {
         this.filteredlist = this.products.filter((item) => item.title.toLowerCase().includes(word.toLowerCase()))
         this.searchInput = '';
         router.push('/search')
-                      }
+                      },
+    showItems(t) {
+      console.log("typ", t);
+      this.filteredlist = this.products.filter((item) => item.type === t);
+   }
   },
 });
