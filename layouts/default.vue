@@ -7,19 +7,24 @@
       </NuxtLink>
     </div>
     <div class="flex gap-8 items-center ">
-          <div class="group relative inline-block">
+          <div class="dropdown">
                 <NuxtLink to="/products" class=" text-[#5e5e58]  hover:text-black z-50">PRODUCTS</NuxtLink>
-                <div class="main">
-                  <div class=" mt-6 border-t grid grid-cols-3 group">
-                    <div class="link bg-white group">PCIe M.2 SSD </div>
-                    <div class=" col-span-2"></div>
-                    <div class="link ">SATA 2.5 SSD</div><div class=" col-span-2"></div>
-                    <div class="link">SATA M.2 SSD</div><div class=" col-span-2"></div>
-                    <div class="link">Memory</div><div class=" col-span-2"></div>
-                    <div class="link">Memory Card</div><div class=" col-span-2"></div>
-                    <div class="link">USB Flash Drive</div><div class=" col-span-2"></div>
-                  </div>
-                  
+                <div class="dropdown-list text-center left-[-50px]">
+      
+                    <div class="dmenu mt-6  bg-zinc-200 hover:bg-white" @mouseover="store.showItems('PCIe M.2 SSD')">PCIe M.2 SSD 
+                    <div class="grid grid-cols-3 gap-2 bg-white z-50 w-[700px] absolute left-44 top-0">
+                        <div v-for="product in store.filteredlist" :key="product.id"  class="" >
+                              <img :src=product.image alt="" @click="store.showDetails(product.id)"
+                               class="max-w-44 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in cursor-pointer">
+                              <h2 class="text-center font-semibold text-md py-2 hover:text-lime-500 cursor-pointer">{{product.title}}</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dmenu py-4 bg-zinc-200 hover:bg-white " @mouseover="store.showItems('SATA 2.5 SSD')">SATA 2.5 SSD</div>
+                    <div class="dmenu py-4 bg-zinc-200 hover:bg-white" @mouseover="store.showItems('SATA M.2 SSD')">SATA M.2 SSD</div>
+                    <div class="dmenu py-4 bg-zinc-200 hover:bg-white" @mouseover="store.showItems('Memory')">Memory</div>
+                    <div class="dmenu py-4 bg-zinc-200 hover:bg-white" @mouseover="store.showItems('Memory Card')">Memory Card</div>
+                    <div class="dmenu py-4 bg-zinc-200 hover:bg-white" @mouseover="store.showItems('USB Flash Drive')">USB Flash Drive</div>  
                 </div>
           </div>
           <div class="dropdown">
@@ -152,7 +157,7 @@ li:hover{
   flex-direction: column;
   position:absolute;
   background:white;
-  min-width:160px;
+  min-width:180px;
 }
 .dropdown-list a{
   display: block;
