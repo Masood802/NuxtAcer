@@ -1,7 +1,7 @@
 <template>
     <h2 class="text-3xl font-bold my-16 py-2 text-center">NEWS</h2>
-    <div class="grid grid-cols-3 gap-2">
-        <div class="flex flex-col  mx-6 shadow-lg  overflow-hidden group">
+    <div class="grid grid-cols-3 gap-2 ">
+        <div class="flex flex-col  mx-6 shadow-lg  overflow-hidden group hidd">
             <img src="../assets/images/1news.jpg" alt=""
              class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in ">
             <h2 class="text-xl text-left mx-6 my-4 group-hover:text-lime-500">Acer FA200 SSD: Elevate Your Digital Experience</h2>
@@ -9,7 +9,7 @@
                 7200 MB/s and 6200 MB/s -
                 providing a superior <br>experience for users.</p>
         </div>
-        <div class="flex flex-col  mx-6 shadow-lg overflow-hidden group">
+        <div class="flex flex-col  mx-6 shadow-lg overflow-hidden group hidd">
             <img src="../assets/images/2news.jpg" alt="" 
             class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in">
             <h2 class="text-xl text-left mx-6 my-4 truncate max-w-[75%] group-hover:text-lime-500">Acer Extends Its High-<br>
@@ -18,7 +18,7 @@
                 speeds of up to 160 MB/s and 120 MB/s respectively, Acer MSC300 MicroSD 
                 card enhances your mobile experience on your smartphone, </p>
         </div>
-        <div class="flex flex-col mx-6 shadow-lg overflow-hidden group">
+        <div class="flex flex-col mx-6 shadow-lg overflow-hidden group hidd">
             <img src="../assets/images/3news.jpg" alt="" 
             class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in ">
             <h2 class="text-xl text-left mx-6 my-4 truncate group-hover:text-lime-500">Acer Unveils New SC300 High-<br>speed SD Card Optimized For 4K Videos Shooting</h2>
@@ -33,9 +33,33 @@
 </template>
 
 <script setup>
+onMounted(() => {
+    const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entery) => {
+                    console.log(entery)
+                    if (entery.isIntersecting) {
+                        entery.target.classList.add('show')
+                    }
+                    else
+                    {
+                        entery.target.classList.remove('show')
+                    }
+                });
+    });
+    const hiddenElements = document.querySelectorAll('.hidd');
+    hiddenElements.forEach((el) => observer.observe(el)); 
+})
 
 </script>
 
 <style  scoped>
-
+.hidd{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.show{
+    opacity:1;
+    transform: translateX(0);
+}
 </style>

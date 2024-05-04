@@ -18,19 +18,32 @@
     <option value="USB Flash Drive">USB Flash Drive</option>
   </select>
 </div>
-<div class="grid grid-cols-3 mx-auto my-10">
-  <div v-for="product in newitems" :key="product.id" id="prod">
-    <img :src=product.image alt="" @click="store.showDetails(product.id)"
-    class="max-w-52 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in cursor-pointer">
-    <h2 class="text-center font-semibold text-lg py-2 hover:text-lime-500 cursor-pointer">{{product.title}}</h2>
-  </div>
-  
-</div>
+<div class="grid grid-cols-3 gap-2 mx-auto hidd">
+      <div class="text-center" v-for="product in newitems" :key="product.id">
+        <img :src=product.image alt="" @click="store.showDetails(product.id)"
+        class="max-w-52 mx-auto scale-100 hover:scale-105 transition-all duration-300 ease-in cursor-pointer">
+        <h2 class="text-center font-bold text-lg py-2 hover:text-lime-500 ">{{ product.title }}</h2> 
+      </div>
+    </div>
 </template>
 
 <script setup>
 onMounted(()=>{
-  newitems.value=store.products
+  newitems.value = store.products;
+  const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entery) => {
+                    console.log(entery)
+                    if (entery.isIntersecting) {
+                        entery.target.classList.add('show')
+                    }
+                    else
+                    {
+                        entery.target.classList.remove('show')
+                    }
+                });
+    });
+    const hiddenElements = document.querySelectorAll('.hidd');
+    hiddenElements.forEach((el) => observer.observe(el)); 
 })
 import { useProductStore } from '~/stores/productStore';
 const newitems = ref([]);
@@ -50,7 +63,8 @@ function showItems() {
     if(store.selectedType==='PCIe M.2 SSD')
     newitems.value=store.products.filter((item)=>item.type===store.selectedType)
     if(store.selectedType==='ALL')
-     newitems.value=store.products
+    newitems.value = store.products
+    console.log(newitems.value)
 }
 
 </script> 
@@ -83,5 +97,23 @@ select {
   padding: 2px 20px ;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.hidd{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.show{
+    transform: translateX(0);
+    opacity: 1;
+}
+.hidd:nth-child(2){
+ transition-delay: 200ms; 
+}
+.hidd:nth-child(3){
+  transition-delay: 400ms;
+}
+.hidd:nth-child(4){
+  transition-delay: 600ms;
 }
 </style>

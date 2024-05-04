@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-40 mb-20">
+    <div class="mt-40 ">
         <h1 class="text-3xl uppercase text-center font-semibold text-zinc-800">Privacy policy</h1>
         <div class="text-left w-[80%] mx-auto mt-4">
                <h2 class="text-xl font-semibold py-2">Please Take the Time to Read Our Privacy Policy</h2> 
@@ -53,7 +53,7 @@
                      where you are located in the world.</p>
             </div>
     </div>
-    <Overview />
+    <overview />
 </template>
 
 <script setup>

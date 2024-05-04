@@ -36,14 +36,14 @@ onMounted(() => {
 <template>
   <div class="my-10 relative">
       <img :src="images[i]" alt="" class="" />
-      <div class="absolute bg-zinc-500 w-12 h-[2px] left-[42%] bottom-3 z-40">
-        <span id="div1" class="absolute bottom-0 w-0 bg-white h-[2px] z-50 left[42%] "></span>
+      <div class="absolute bg-zinc-500 w-12 h-[2px] left-[42%] bottom-3 z-30">
+        <span id="div1" class="absolute bottom-0 w-0 bg-white h-[2px] z-40 left[42%]"></span>
       </div>
-      <div class="absolute bg-zinc-500 w-12 h-[2px] left-[46%] bottom-3 z-40 mr-1">
-        <span id="div2" class="absolute bottom-0 w-0 bg-white h-[2px] z-50 left[46%] "></span>
+      <div class="absolute bg-zinc-500 w-12 h-[2px] left-[47%] bottom-3 z-30 ">
+        <span id="div2" class="absolute bottom-0 w-0 bg-white h-[2px] z-40 left[46%]"></span>
       </div>
-      <div class="absolute bg-zinc-500 w-12 h-[2px] left-[50%] bottom-3 z-40">
-        <span id="div3" class="absolute bottom-0 w-0 bg-white h-[2px] z-50 left[506%]"></span>
+      <div class="absolute bg-zinc-500 w-12 h-[2px] left-[52%] bottom-3 z-30 ">
+        <span id="div3" class="absolute bottom-0 w-0 bg-white h-[2px] z-40 left[51%]"></span>
       </div>
 
   </div>
