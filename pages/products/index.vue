@@ -28,11 +28,15 @@
 </template>
 
 <script setup>
+import USelect from 'nvd-u/components/USelect.vue';
+const types = ['All','PCIe M.2 SSD','SATA 2.5 SSD','SATA M.2 SSD','Memory','Memory Card','USB Flash Drive']
+const form = reactive({
+    type: '',
+})
 onMounted(()=>{
   newitems.value = store.products;
   const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entery) => {
-                    console.log(entery)
                     if (entery.isIntersecting) {
                         entery.target.classList.add('show')
                     }
@@ -44,6 +48,10 @@ onMounted(()=>{
     });
     const hiddenElements = document.querySelectorAll('.hidd');
     hiddenElements.forEach((el) => observer.observe(el)); 
+})
+onUpdated(() => {
+  store.selectedType=form.type
+  showItems();
 })
 import { useProductStore } from '~/stores/productStore';
 const newitems = ref([]);
