@@ -178,10 +178,12 @@ export const useProductStore = defineStore("product", {
           const router=useRouter()
             if(!word)
                    {
-                  router.push('/search')
+              router.push('/search')
+              this.filteredlist = [];
+              console.log('No word')
+              return;
                    }
         this.filteredlist = this.products.filter((item) => item.title.toLowerCase().includes(word.toLowerCase()))
-        this.searchInput = '';
         router.push('/search')
                       },
     showItems(t) {
