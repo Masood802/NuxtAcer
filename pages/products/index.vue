@@ -28,11 +28,7 @@
 </template>
 
 <script setup>
-import USelect from 'nvd-u/components/USelect.vue';
-const types = ['All','PCIe M.2 SSD','SATA 2.5 SSD','SATA M.2 SSD','Memory','Memory Card','USB Flash Drive']
-const form = reactive({
-    type: '',
-})
+const types = ['ALL','PCIe M.2 SSD','SATA 2.5 SSD','SATA M.2 SSD','Memory','Memory Card','USB Flash Drive']
 onMounted(()=>{
   newitems.value = store.products;
   const observer = new IntersectionObserver((entries) => {
@@ -49,32 +45,16 @@ onMounted(()=>{
     const hiddenElements = document.querySelectorAll('.hidd');
     hiddenElements.forEach((el) => observer.observe(el)); 
 })
-onUpdated(() => {
-  store.selectedType=form.type
-  showItems();
-})
 import { useProductStore } from '~/stores/productStore';
 const newitems = ref([]);
 const router = useRouter();
 const store = useProductStore();
 function showItems() {
-    if(store.selectedType==='Memory')
-   newitems.value=store.products.filter((item)=>item.type===store.selectedType)
-    if(store.selectedType==='Memory Card')
-    newitems.value= store.products.filter((item)=>item.type===store.selectedType)
-    if(store.selectedType==='USB Flash Drive')
-    newitems.value= store.products.filter((item)=>item.type===store.selectedType)
-    if(store.selectedType==='SATA M.2 SSD')
-    newitems.value=store.products.filter((item)=>item.type===store.selectedType)
-    if(store.selectedType==='SATA 2.5 SSD')
-    newitems.value=store.products.filter((item)=>item.type===store.selectedType)
-    if(store.selectedType==='PCIe M.2 SSD')
-    newitems.value=store.products.filter((item)=>item.type===store.selectedType)
-    if(store.selectedType==='ALL')
-    newitems.value = store.products
-    console.log(newitems.value)
+  newitems.value = store.products.filter((item) => item.type === store.selectedType)
+  if (store.selectedType === 'ALL') {
+    newitems.value=store.products
+   }    
 }
-
 </script> 
 
 <style scoped>
