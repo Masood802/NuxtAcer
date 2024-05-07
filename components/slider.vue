@@ -1,8 +1,8 @@
 <script setup>
 let images = ref([
-  "_nuxt/assets/images/FA200.jpg",
-  "_nuxt/assets/images/MA200.jpg",
-  "_nuxt/assets/images/UD200-SD200.jpg",
+  "/FA200.jpg",
+  "/MA200.jpg",
+  "/UD200-SD200.jpg",
 ]);
 let i = ref(0);
 onMounted(() => {
