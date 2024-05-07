@@ -53,7 +53,6 @@
                      where you are located in the world.</p>
             </div>
     </div>
-    <overview />
 </template>
 
 <script setup>

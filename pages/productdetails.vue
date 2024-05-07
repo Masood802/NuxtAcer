@@ -143,7 +143,7 @@
            <div class="col2 border-b">Limited Lifetime</div>
         </div>
     </div>
-    <div id="download" class="my-12">
+    <div id="download" class="my-16">
         <h2 class="uppercase text-3xl font-semibold text-center py-4">downloads</h2>
        <div class="flex items-center justify-center">
             <h3 class="text-center text-lg cursor-pointer">Acer UD200 Sepcifications <i class="material-icons ml-4 cursor-pointer hover:scale-90 transition-all duration-500 ease-linear ">download</i></h3>

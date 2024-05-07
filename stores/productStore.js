@@ -6,7 +6,7 @@ export const useProductStore = defineStore("product", {
         id: 1,
         type: "PCIe M.2 SSD",
         title: "Acer MA200 NVMe SSD ",
-        image: "http://localhost:3000/_nuxt/assets/images/Acer_MA200.jpg",
+        image: "_nuxt/assets/images/Acer_MA200.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -14,7 +14,7 @@ export const useProductStore = defineStore("product", {
         id: 2,
         type: "Memory",
         title: "Acer UD200 DDR5 Desktop Memory",
-        image: "http://localhost:3000/_nuxt/assets/images/Acer_UD200.jpg",
+        image: "_nuxt/assets/images/Acer_UD200.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -22,7 +22,7 @@ export const useProductStore = defineStore("product", {
         id: 3,
         type: "Memory",
         title: "Acer SD200 Laptop DRAM",
-        image: "http://localhost:3000/_nuxt/assets/images/Acer_SD200.jpg",
+        image: "_nuxt/assets/images/Acer_SD200.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -30,7 +30,7 @@ export const useProductStore = defineStore("product", {
         id: 4,
         type: "PCIe M.2 SSD",
         title: "Acer FA200 PCle M.2 SSD",
-        image: "http://localhost:3000/_nuxt/assets/images/product-3.png",
+        image: "_nuxt/assets/images/product-3.png",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -38,7 +38,7 @@ export const useProductStore = defineStore("product", {
         id: 5,
         type: "Memory Card",
         title: "Acer MSC300 MicroSD Card",
-        image: "http://localhost:3000/_nuxt/assets/images/1n.jpg",
+        image: "_nuxt/assets/images/1n.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -46,7 +46,7 @@ export const useProductStore = defineStore("product", {
         id: 6,
         type: "USB Flash Drive",
         title: "Acer UM310 USB Flash Drive",
-        image: "http://localhost:3000/_nuxt/assets/images/UM310.png",
+        image: "_nuxt/assets/images/UM310.png",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -54,7 +54,7 @@ export const useProductStore = defineStore("product", {
         id: 7,
         type: "USB Flash Drive",
         title: "Acer UP300 USB Flash Drive",
-        image: "http://localhost:3000/_nuxt/assets/images/product-4.jpg",
+        image: "_nuxt/assets/images/product-4.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -62,7 +62,7 @@ export const useProductStore = defineStore("product", {
         id: 8,
         type: "USB Flash Drive",
         title: "Acer UP200 USB Flash Drive",
-        image: "http://localhost:3000/_nuxt/assets/images/01.jpg",
+        image: "_nuxt/assets/images/01.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -70,7 +70,7 @@ export const useProductStore = defineStore("product", {
         id: 9,
         type: "USB Flash Drive",
         title: "Acer UF300 USB Flash Drive",
-        image: "http://localhost:3000/_nuxt/assets/images/6.png",
+        image: "_nuxt/assets/images/6.png",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -78,7 +78,7 @@ export const useProductStore = defineStore("product", {
         id: 10,
         type: "USB Flash Drive",
         title: "Acer UF200 USB Flash Drive",
-        image: "http://localhost:3000/_nuxt/assets/images/6.png",
+        image: "_nuxt/assets/images/6.png",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -86,7 +86,7 @@ export const useProductStore = defineStore("product", {
         id: 11,
         type: "Memory Card",
         title: "Acer SC300 SD Card",
-        image: "http://localhost:3000/_nuxt/assets/images/1.png",
+        image: "_nuxt/assets/images/1.png",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -94,7 +94,7 @@ export const useProductStore = defineStore("product", {
         id: 12,
         type: "Memory Card",
         title: "Acer SC900 SD Card",
-        image: "http://localhost:3000/_nuxt/assets/images/010.png",
+        image: "_nuxt/assets/images/010.png",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -102,7 +102,7 @@ export const useProductStore = defineStore("product", {
         id: 13,
         type: "Memory",
         title: "Acer HT100 Desktop DRAM",
-        image: "http://localhost:3000/_nuxt/assets/images/7.jpg",
+        image: "_nuxt/assets/images/7.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -110,7 +110,7 @@ export const useProductStore = defineStore("product", {
         id: 14,
         type: "Memory Card",
         title: "Acer CF express card CFE100",
-        image: "http://localhost:3000/_nuxt/assets/images/CFE.jpg",
+        image: "_nuxt/assets/images/CFE.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -118,7 +118,7 @@ export const useProductStore = defineStore("product", {
         id: 15,
         type: "Memory Card",
         title: "Acer CFE100 Memory Card",
-        image: "http://localhost:3000/_nuxt/assets/images/1T.jpg",
+        image: "_nuxt/assets/images/1T.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -126,7 +126,7 @@ export const useProductStore = defineStore("product", {
         id: 16,
         type: "SATA M.2 SSD",
         title: "Acer RE100 M.2 SSD",
-        image: "http://localhost:3000/_nuxt/assets/images/FA200PCI.jpg",
+        image: "_nuxt/assets/images/FA200PCI.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -134,7 +134,7 @@ export const useProductStore = defineStore("product", {
         id: 17,
         type: "Memory",
         title: "Acer UD100 Desktop DRAM",
-        image: "http://localhost:3000/_nuxt/assets/images/UD100.jpg",
+        image: "_nuxt/assets/images/UD100.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -142,7 +142,7 @@ export const useProductStore = defineStore("product", {
         id: 18,
         type: "Memory",
         title: "Acer SD100 Laptop DRAM",
-        image: "http://localhost:3000/_nuxt/assets/images/Acer_SD200.jpg",
+        image: "_nuxt/assets/images/Acer_SD200.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -150,7 +150,7 @@ export const useProductStore = defineStore("product", {
         id: 19,
         type: "SATA 2.5 SSD",
         title: "Acer SA100 2.5 SATA III SSD",
-        image: "http://localhost:3000/_nuxt/assets/images/SATA2.5.jpg",
+        image: "_nuxt/assets/images/SATA2.5.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -158,7 +158,7 @@ export const useProductStore = defineStore("product", {
         id: 20,
         type: "SATA 2.5 SSD",
         title: "Acer RE100 2.5 SATA III SSD",
-        image: "http://localhost:3000/_nuxt/assets/images/SATA2.52.jpg",
+        image: "_nuxt/assets/images/SATA2.52.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -187,7 +187,6 @@ export const useProductStore = defineStore("product", {
         router.push('/search')
                       },
     showItems(t) {
-      console.log("typ", t);
       this.filteredlist = this.products.filter((item) => item.type === t);
    }
   },
