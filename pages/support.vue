@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-16 bg-[url('http://localhost:3000/_nuxt/assets/images/customer-bg.jpg')] bg-center-top w-full h-[1500px] bg-cover  ">
+  <div class="mt-16 bg-[url('/customer-bg.jpg')] bg-center-top w-full h-[1500px] bg-cover  ">
       <h2 class="pt-32 text-center text-4xl font-bold">CUSTOMER SUPPORT</h2>
     <div class="grid grid-cols-3 grid-rows-5 gap-10 mt-8 mx-20">
     <div class="bg-white shadow-md  h-[200px] px-8  flex flex-col">

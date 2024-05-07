@@ -1,8 +1,8 @@
 <template>
-    <div class="w-full mt-16 bg-[url('http://localhost:3000/_nuxt/assets/images/news.jpg')] bg-center bg-cover h-72 mb-20"></div>
+    <div class="w-full mt-16 bg-[url('/news.jpg')] bg-center bg-cover h-72 mb-20"></div>
     <div class="grid grid-cols-3 gap-2 mt-40 w-[90%] mx-auto mb-32">
         <div class="imagediv group hidd">
-            <img src="../assets/images/1news.jpg" alt=""
+            <img src="/1news.jpg" alt=""
              class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in ">
             <h2 class="text-lg text-left mx-6 my-4 group-hover:text-lime-500">Acer FA200 SSD: Elevate Your Digital Experience</h2>
             <p class="text-sm text-left mx-6 my-2">Acer FA200 SSD brings faster read and write speeds -<br> 
@@ -10,7 +10,7 @@
                 providing a superior <br>experience for users.</p>
         </div>
         <div class="imagediv group hidd">
-            <img src="../assets/images/2news.jpg" alt="" 
+            <img src="/2news.jpg" alt="" 
             class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in">
             <h2 class="text-lg text-left mx-6 my-4 truncate max-w-[75%] group-hover:text-lime-500">Acer Extends Its High-<br>
                 performance SD Memory Card Lineup with New MSC300</h2>
@@ -19,7 +19,7 @@
                 card enhances your mobile experience on your smartphone, </p>
         </div>
         <div class="imagediv group hidd">
-            <img src="../assets/images/3news.jpg" alt="" 
+            <img src="/3news.jpg" alt="" 
             class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in ">
             <h2 class="text-lg text-left mx-6 my-4 truncate group-hover:text-lime-500">Acer Unveils New SC300 High-<br>speed SD Card Optimized For 4K Videos Shooting</h2>
             <p class="text-sm text-left mx-6 my-2">Acer FA200 SSD brings faster read and write speeds -<br> 
@@ -27,7 +27,7 @@
                 providing a superior <br>experience for users.</p>
         </div>
         <div class="imagediv group hidd">
-            <img src="../assets/images/news4.jpg" alt=""
+            <img src="/news4.jpg" alt=""
              class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in ">
             <h2 class="text-lg text-left mx-6 my-4 group-hover:text-lime-500">Acer FA200 SSD: Elevate Your Digital Experience</h2>
             <p class="text-sm text-left mx-6 my-2">Acer FA200 SSD brings faster read and write speeds -<br> 
@@ -35,7 +35,7 @@
                 providing a superior <br>experience for users.</p>
         </div>
         <div class="imagediv group hidd">
-            <img src="../assets/images/news5.jpg" alt="" 
+            <img src="/news5.jpg" alt="" 
             class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in">
             <h2 class="text-lg text-left mx-6 my-4 truncate max-w-[75%] group-hover:text-lime-500">Acer Extends Its High-<br>
                 performance SD Memory Card Lineup with New MSC300</h2>
@@ -44,7 +44,7 @@
                 card enhances your mobile experience on your smartphone, </p>
         </div>
         <div class="imagediv group hidd">
-            <img src="../assets/images/news6.jpg" alt="" 
+            <img src="/news6.jpg" alt="" 
             class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in ">
             <h2 class="text-lg text-left mx-6 my-4 truncate group-hover:text-lime-500">Acer Unveils New SC300 High-<br>speed SD Card Optimized For 4K Videos Shooting</h2>
             <p class="text-sm text-left mx-6 my-2">Acer FA200 SSD brings faster read and write speeds -<br> 
@@ -52,7 +52,7 @@
                 providing a superior <br>experience for users.</p>
         </div>
         <div class="imagediv group hidd">
-            <img src="../assets/images/news7.jpg" alt="" 
+            <img src="/news7.jpg" alt="" 
             class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in">
             <h2 class="text-lg text-left mx-6 my-4 truncate max-w-[75%] group-hover:text-lime-500">Acer Extends Its High-<br>
                 performance SD Memory Card Lineup with New MSC300</h2>
@@ -61,7 +61,7 @@
                 card enhances your mobile experience on your smartphone, </p>
         </div>
         <div class="imagediv group hidd">
-            <img src="../assets/images/news8.jpg" alt="" 
+            <img src="/news8.jpg" alt="" 
             class="scale-100 group-hover:scale-105 transition-all duration-400 ease-in ">
             <h2 class="text-lg text-left mx-6 my-4 truncate group-hover:text-lime-500">Acer Unveils New SC300 High-<br>speed SD Card Optimized For 4K Videos Shooting</h2>
             <p class="text-sm text-left mx-6 my-2 pb-2">Acer FA200 SSD brings faster read and write speeds -<br> 

@@ -2,7 +2,7 @@
     <header class="w-screen h-[72px] flex justify-between border-b pb-2 border-gray-300 fixed top-0 bg-white z-40 py-1 mb-20">
     <div class="flex">
       <NuxtLink to="/" class="flex items-center">
-              <img src="../assets/images/Acer-Logo.png" alt="acer-logo" class="mx-6 max-w-16 h-12" />
+              <img src="/Acer-Logo.png" alt="acer-logo" class="mx-6 max-w-16 h-12" />
                <span class=" border-l-2 mx-2 px-2 text-gray-500 text-sm leading-4 font-semibold">OFFICAIL <br />LICENSEE</span>
       </NuxtLink>
     </div>

@@ -33,10 +33,10 @@
                  and Acer UD200 DDR5 comes in capacities up to 32 GB.</p>
         </div>
         <div class="p-7">
-            <img src="../assets/images/Acer_UD200b.jpg" alt="">
+            <img src="/Acer_UD200b.jpg" alt="">
         </div>
         <div class="p-7">
-            <img src="../assets/images/Acer_UD200_A.jpg" alt="">
+            <img src="/Acer_UD200_A.jpg" alt="">
         </div>
         <div class="p-7">
             <h2 class="text-5xl font-semibold  my-4">EXPAND COMPUTING EXPERIENCE WITH UD200 DDR5</h2>
@@ -56,10 +56,10 @@
                  and Acer UD200 DDR5 comes in capacities up to 32 GB.</p>
         </div>
         <div class="p-7">
-            <img src="../assets/images/Acer_UD200_A+7.jpg" alt="">
+            <img src="/Acer_UD200_A+7.jpg" alt="">
         </div>
         <div class="p-7">
-            <img src="../assets/images/Acer_UD200_A+8.jpg" alt="">
+            <img src="/Acer_UD200_A+8.jpg" alt="">
         </div>
         <div class="p-7">
             <h2 class="text-5xl font-semibold  my-4">CAPACITIES UP TO 32</h2>
@@ -79,10 +79,10 @@
                  and Acer UD200 DDR5 comes in capacities up to 32 GB.</p>
         </div>
         <div class="p-7">
-            <img src="../assets/images/Acer_UD200_A+5.jpg" alt="">
+            <img src="/Acer_UD200_A+5.jpg" alt="">
         </div>
         <div class="p-7">
-            <img src="../assets/images/Acer_UD200_A+6.jpg" alt="">
+            <img src="/Acer_UD200_A+6.jpg" alt="">
         </div>
         <div class="p-7">
             <h2 class="text-5xl font-semibold  my-4">MORE EFFICIENT POWER MANAGEMENT</h2>
@@ -102,11 +102,11 @@
                  and Acer UD200 DDR5 comes in capacities up to 32 GB.</p>
         </div>
         <div class="p-7">
-            <img src="../assets/images/Acer_UD200_A+4.jpg" alt="">
+            <img src="/Acer_UD200_A+4.jpg" alt="">
         </div>
         
 <div class="p-7">
-            <img src="../assets/images/Acer_UD200_A+3.jpg" alt="">
+            <img src="/Acer_UD200_A+3.jpg" alt="">
         </div>
         <div class="p-7">
             <h2 class="text-5xl font-semibold  my-4">PREMIUM SELECTION ENSURES QUALITY</h2>
