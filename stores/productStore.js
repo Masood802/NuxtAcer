@@ -150,7 +150,7 @@ export const useProductStore = defineStore("product", {
         id: 19,
         type: "SATA 2.5 SSD",
         title: "Acer SA100 2.5 SATA III SSD",
-        image: "_nuxt/assets/images/SATA2.5.jpg",
+        image: "~/assets/images/SATA2.5.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
@@ -158,7 +158,7 @@ export const useProductStore = defineStore("product", {
         id: 20,
         type: "SATA 2.5 SSD",
         title: "Acer RE100 2.5 SATA III SSD",
-        image: "_nuxt/assets/images/SATA2.52.jpg",
+        image: "~/assets/images/SATA2.52.jpg",
         description:
           "Unleash speeds up to 5600 MHz Elevate stability with On-Die ECC Power management IC (PMIC)",
       },
